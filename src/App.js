@@ -6,14 +6,14 @@ import Column from "./components/Column/Column";
 
 function App() {
   return (
-    <Container isFluid={true}>
+    <Container>
       <Row>
         <Column width="6">
           <Row>
             <RowElement>Aloha</RowElement>
             <RowElement>Ciao</RowElement>
             <RowElement>Hello</RowElement>
-            <RowElement>Maybe</RowElement>
+            <RowElement left={true}>Maybe</RowElement>
           </Row>
         </Column>
         <Column width="4">
