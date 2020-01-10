@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "../src/components/Container/Container";
+import Row from "../src/components/Row/Row";
+import RowElement from "../src/components/RowElement/RowElement";
+import Column from "./components/Column/Column";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container isFluid={true}>
+      <Row>
+        <Column width="6">
+          <Row>
+            <RowElement>Aloha</RowElement>
+            <RowElement>Ciao</RowElement>
+            <RowElement>Hello</RowElement>
+            <RowElement>Maybe</RowElement>
+          </Row>
+        </Column>
+        <Column width="4">
+          <Row>
+            <RowElement>Aloha</RowElement>
+            <RowElement>Ciao</RowElement>
+            <RowElement>Hello</RowElement>
+            <RowElement>Maybe</RowElement>
+          </Row>
+        </Column>
+      </Row>
+    </Container>
   );
 }
 
